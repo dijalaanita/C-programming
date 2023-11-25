@@ -3,32 +3,32 @@
 
 int main(void)
 {
-    int lowest, highest, nextValue;
+    int least, greatest, newValue;
 
     printf("Enter your series of numbers between -98 to + infinity (-99 to end):");
-    scanf("%d", &nextValue);
+    scanf("%d", &newValue);
 
-    highest = lowest = nextValue;
+    greatest = least = newValue;
 
-    while (nextValue != -99)
+    while (newValue != -99)
     {
-        if(nextValue > highest)
+        if(newValue > greatest)
         {
-            highest = nextValue;
+            greatest = newValue;
         }
 
-        if(nextValue < lowest)
+        if(newValue < least)
         {
-            lowest = nextValue;
+            least = newValue;
         }
-        scanf("%d", &nextValue);
+        scanf("%d", &newValue);
     }
 
-    if(highest != -99)
+    if(greatest != -99)
     {
-    printf("the greatest number is: %d\n", highest);
-    printf("The lowest number is: %d\n", lowest);
+    printf("the greatest number is: %d\n", greatest);
+    printf("The lowest number is: %d\n", least);
     }
-    puts("thank you love");
+    puts("thank you");
     return 0;
 }

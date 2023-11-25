@@ -11,7 +11,10 @@ int main(void)
         feeNum = membership * feeRate;
         newFees = feeNum + membership;
         printf("%d $%.1f\n",period, newFees);
+
+        // Update membership for the next iteration
+        membership = newFees;
     }
-    
+    return 0;
     
 }

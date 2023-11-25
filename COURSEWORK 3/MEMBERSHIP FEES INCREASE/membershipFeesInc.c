@@ -10,7 +10,7 @@ int main(void)
     {
         feeNum = membership * feeRate;
         newFees = feeNum + membership;
-        printf("%d %.1f\n",period, newFees);
+        printf("%d $%.1f\n",period, newFees);
     }
     
     
